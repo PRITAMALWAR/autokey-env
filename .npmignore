@@ -1,0 +1,10 @@
+test/
+examples/
+.github/
+.env
+.env.*
+!.env.example
+.eslintignore
+.eslintrc*
+eslint.config.js
+.prettierrc.json

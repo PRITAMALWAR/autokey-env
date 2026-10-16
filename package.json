@@ -1,0 +1,54 @@
+{
+  "name": "autokey-env",
+  "version": "0.1.0",
+  "description": "A lightweight environment configuration loader and validator for Node.js.",
+  "license": "MIT",
+  "type": "commonjs",
+  "main": "./src/index.js",
+  "module": "./src/index.mjs",
+  "types": "./types/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./types/index.d.ts",
+      "import": "./src/index.mjs",
+      "require": "./src/index.js"
+    }
+  },
+  "files": [
+    "src/",
+    "types/",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "scripts": {
+    "test": "node --test",
+    "test:coverage": "node --test",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "keywords": [
+    "env",
+    "dotenv",
+    "configuration",
+    "environment-variables",
+    "api-keys"
+  ],
+  "dependencies": {
+    "dotenv": "^16.4.7"
+  },
+  "devDependencies": {
+    "eslint": "^9.17.0",
+    "globals": "^15.14.0",
+    "prettier": "^3.4.2"
+  },
+  "directories": {
+    "example": "examples",
+    "test": "test"
+  },
+  "author": ""
+}
